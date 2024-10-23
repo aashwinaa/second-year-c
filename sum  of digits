@@ -1,0 +1,31 @@
+#include<stdio.h>
+int sum(int);
+int sum(int a){
+    int sum=0;
+    int b;
+    while(a>0)
+
+{
+    b=a%10;
+    a=a/10;
+    sum=sum+b;
+}
+  return sum;
+}
+void main()
+{
+    
+
+    int a;
+    int sum1=0;
+    while(1)
+    {
+        printf("enter a number");
+        scanf("%d",&a);
+        if(a==0)
+            break;
+        else
+            sum1=sum1+sum(a);
+    }
+    printf("result",sum1);
+}
