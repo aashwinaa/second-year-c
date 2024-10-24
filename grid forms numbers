@@ -1,0 +1,14 @@
+#include <stdio.h
+Void main() {
+    int n, count = 1;
+    printf("Enter the size of the grid (n x n): ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        for (int j = 1; j <= n; j++) {
+            printf("%3d ", count); 
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
